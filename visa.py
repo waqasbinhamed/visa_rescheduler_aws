@@ -7,7 +7,7 @@ import random
 import re
 import sys
 import time as tm
-from datetime import datetime
+from datetime import datetime, timedelta
 from enum import Enum
 from tempfile import mkdtemp
 
@@ -25,10 +25,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 from utils import Result
 
 console = logging.StreamHandler(sys.stdout)
-formatter = logging.Formatter('%(levelname)s:%(funcName)s - %(message)s')
+file_handler = logging.FileHandler(f'logs/{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')
+
+formatter = logging.Formatter('%(asctime)s - %(levelname)s:%(funcName)s - %(message)s')
 console.setFormatter(formatter)
+file_handler.setFormatter(formatter)
 logger = logging.getLogger("Visa_Logger")
 logger.addHandler(console)
+logger.addHandler(file_handler)
 logger.setLevel(logging.DEBUG)
 
 config = configparser.ConfigParser()
@@ -49,7 +53,7 @@ PUSH_USER = config['PUSHOVER']['PUSH_USER']
 USE = config['CHROMEDRIVER']['USE']
 HUB_ADDRESS = config['CHROMEDRIVER']['HUB_ADDRESS']
 
-REGEX_CONTINUE = "//a[contains(text(),'Continuar')]"
+REGEX_CONTINUE = "//a[contains(text(),'Continue')]"
 
 STEP_TIME = 0.5  # time between steps (interactions with forms): 0.5 seconds
 
@@ -62,7 +66,7 @@ TIME_URL_ASC = f"https://ais.usvisa-info.com/{COUNTRY_CODE}/niv/schedule/{SCHEDU
 code = COUNTRY_CODE.split("-")
 code[1] = code[1].upper()
 code = str.join("_", code)
-locale.setlocale(locale.LC_ALL, f'{code}.UTF-8')
+# locale.setlocale(locale.LC_ALL, f'{code}.UTF-8')
 
 
 class Use(Enum):
@@ -77,9 +81,9 @@ class VisaScheduler:
         self.my_schedule_date = None
 
     # def MY_CONDITION_DATE(year, month, day): return int(month) == 11 and int(day) >= 5 and int(year) == 2023
-    @staticmethod
-    def MY_CONDITION_DATE(year, month, day):
-        return True  # No custom condition wanted for the new scheduled date
+    def MY_CONDITION_DATE(self, app_date):
+        app_dt = datetime.strptime(app_date, "%Y-%m-%d") 
+        return datetime.strptime(self.my_schedule_date, "%Y-%m-%d") - app_dt > timedelta(days=90) and app_dt > datetime.now() + timedelta(days=14)
 
     # def MY_CONDITION_TIME(hour, minute): return int(hour) >= 8 and int(hour) <= 12 and int(minute) == 0
     @staticmethod
@@ -240,8 +244,8 @@ class VisaScheduler:
         def get_available_date(dates):
             for d in dates:
                 date = d.get('date')
-                year, month, day = date.split('-')
-                if VisaScheduler.MY_CONDITION_DATE(year, month, day):
+                # year, month, day = date.split('-')
+                if self.MY_CONDITION_DATE(date):
                     return date
 
         def get_time(date_asc):
@@ -279,11 +283,15 @@ class VisaScheduler:
     def get_driver():
         dr = None
         if USE == Use.LOCAL.value:
-            dr = webdriver.Chrome(ChromeDriverManager().install())
+            chrome_options = webdriver.ChromeOptions()
+            # chrome_options.add_argument('--headless=new')
+            # dr = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+            dr = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options)
+            
         elif USE == Use.AWS.value:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.binary_location = "/opt/chrome/chrome"
-            chrome_options.add_argument('--headless')
+            chrome_options.add_argument('--headless=new')
             chrome_options.add_argument('--no-sandbox')
             chrome_options.add_argument('--disable-gpu')
             chrome_options.add_argument('--window-size=1280x1696')
@@ -313,9 +321,10 @@ class VisaScheduler:
         for d in dates:
             date = d.get('date')
             if is_earlier(date):
-                year, month, day = date.split('-')
-                if VisaScheduler.MY_CONDITION_DATE(year, month, day):
+                # year, month, day = date.split('-')
+                if self.MY_CONDITION_DATE(date):
                     return date
+                self.send_notification(f'Available date: {date}, current date: {self.my_schedule_date}, meets conditions?: {self.MY_CONDITION_DATE(date)}')
 
     @staticmethod
     def send_notification(msg):
@@ -355,7 +364,9 @@ class VisaScheduler:
 
         try:
             self.login()
-            self.get_my_schedule_date()
+            self.get_my_schedule_date()            
+            logger.info(f"Current appointment date: {self.my_schedule_date}")
+
             dates = self.get_date()[:5]
             if not dates:
                 logger.info("No dates available on FACILITY")

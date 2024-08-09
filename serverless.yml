@@ -1,7 +1,10 @@
+app: usvisascheduler
 service: visa-rescheduler-lambda
 
 provider:
   name: aws
+  stage: ${opt:stage, 'prod'}
+  region: ${env:AWS_REGION, 'us-east-1'}
   logRetentionInDays: 5
   iam:
     role:
@@ -9,35 +12,13 @@ provider:
         - Effect: Allow
           Action: 'iam:PassRole'
           Resource:
-            - 'Fn::Join':
-                - ''
-                - - 'arn:aws:iam::'
-                  - Ref: AWS::AccountId
-                  - ':role/'
-                  - ${self:service}
-                  - '-'
-                  - ${self:provider.stage}
-                  - '-'
-                  - Ref: AWS::Region
-                  - '-lambdaRole'
+            - 'arn:aws:iam::${aws:accountId}:role/${self:service}-${self:provider.stage}-${aws:region}-lambdaRole'
         - Effect: Allow
           Action:
             - 'scheduler:GetSchedule'
             - 'scheduler:UpdateSchedule'
           Resource:
-            - 'Fn::Join':
-              - ''
-              - - 'arn:aws:scheduler:'
-                - Ref: AWS::Region
-                - ':'
-                - Ref: AWS::AccountId
-                - ':schedule/default/'
-                - ${self:service}
-                - '*'
-
-
-  stage: ${opt:stage, 'prod'}
-  region: ${env:AWS_REGION, 'us-east-1'}
+            - 'arn:aws:scheduler:${aws:region}:${aws:accountId}:schedule/default/${self:service}*'
   ecr:
     images:
       img:
@@ -47,7 +28,6 @@ provider:
 functions:
   main:
     timeout: 60
-    # If you experience any errors such as Chrome crashing or not being available you might need to increase the storage available to your Lambda Function.
     memorySize: 2048
     image:
       name: img

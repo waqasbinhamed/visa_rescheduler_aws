@@ -1,6 +1,8 @@
 config.ini
 .idea
 .serverless
+.venv
+logs/*
 
 __pycache__/
 *.py[cod]
