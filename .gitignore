@@ -8,5 +8,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+venv
 geckodriver
 geckodriver.log
