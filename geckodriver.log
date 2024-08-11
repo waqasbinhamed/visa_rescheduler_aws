@@ -1,0 +1,371 @@
+1723247956083	geckodriver	INFO	Listening on 127.0.0.1:48611
+1723247956590	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "47531" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenJk8X2"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723247957494	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723247957991	Marionette	INFO	Listening on port 42021
+WebDriver BiDi listening on ws://127.0.0.1:47531
+Read port: 42021
+1723247958589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47531/devtools/browser/9d38e70f-7941-4110-b58f-f8693ef51929
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723247987841	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723248361984	geckodriver	INFO	Listening on 127.0.0.1:38823
+1723248362492	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "42477" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehrbqfE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248363392	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248363848	Marionette	INFO	Listening on port 34279
+WebDriver BiDi listening on ws://127.0.0.1:42477
+Read port: 34279
+1723248364448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42477/devtools/browser/49aeacc1-6d99-4a83-96cd-5116c3dd567a
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248393392	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723248481953	geckodriver	INFO	Listening on 127.0.0.1:41599
+1723248482460	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "54399" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilef5HNru"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248483363	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248483824	Marionette	INFO	Listening on port 36707
+Read port: 36707
+WebDriver BiDi listening on ws://127.0.0.1:54399
+1723248484068	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54399/devtools/browser/4950393b-29c7-4860-8356-43b0e645a6dc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248513456	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723248602034	geckodriver	INFO	Listening on 127.0.0.1:48673
+1723248602541	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "60721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileohVtXA"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248603441	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248603943	Marionette	INFO	Listening on port 37347
+WebDriver BiDi listening on ws://127.0.0.1:60721
+Read port: 37347
+1723248604548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:60721/devtools/browser/5ab7a24f-4e69-4fd5-bd0b-c68e7cd7660e
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248636547	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723248721922	geckodriver	INFO	Listening on 127.0.0.1:34357
+1723248722431	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "47149" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJcg1h3"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248723509	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248724008	Marionette	INFO	Listening on port 40477
+Read port: 40477
+WebDriver BiDi listening on ws://127.0.0.1:47149
+1723248724258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47149/devtools/browser/6e7b4ccc-4fef-46c4-9911-12bcc3ce188f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248753563	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723248841634	geckodriver	INFO	Listening on 127.0.0.1:39765
+1723248842142	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "44327" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNcFwrT"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248843060	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248843539	Marionette	INFO	Listening on port 39655
+Read port: 39655
+WebDriver BiDi listening on ws://127.0.0.1:44327
+1723248843787	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44327/devtools/browser/e711d700-b610-440d-ba3c-ebc66a6c531b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248873873	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723248962296	geckodriver	INFO	Listening on 127.0.0.1:37885
+1723248962803	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "37135" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZQ8Qal"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723248963723	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723248964322	Marionette	INFO	Listening on port 44129
+WebDriver BiDi listening on ws://127.0.0.1:37135
+Read port: 44129
+1723248964939	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37135/devtools/browser/f65403f6-ddf9-407b-a2d7-7e5fca5e5ed5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723248993793	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723249082079	geckodriver	INFO	Listening on 127.0.0.1:57907
+1723249082087	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "38545" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVi7CIc"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723249083037	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723249083504	Marionette	INFO	Listening on port 43997
+WebDriver BiDi listening on ws://127.0.0.1:38545
+Read port: 43997
+1723249084125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38545/devtools/browser/17e592d1-0938-4aa6-8508-887c168ad985
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723249113115	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723249202490	geckodriver	INFO	Listening on 127.0.0.1:38309
+1723249202499	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "51675" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilembiX5e"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723249203481	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723249203948	Marionette	INFO	Listening on port 38071
+WebDriver BiDi listening on ws://127.0.0.1:51675
+Read port: 38071
+1723249204578	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51675/devtools/browser/97343b8e-a940-486c-9a9a-890d2654bb55
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723249233775	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723249322643	geckodriver	INFO	Listening on 127.0.0.1:56071
+1723249322652	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "33201" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRI1ks5"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723249323658	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723249324146	Marionette	INFO	Listening on port 46409
+Read port: 46409
+WebDriver BiDi listening on ws://127.0.0.1:33201
+1723249324406	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33201/devtools/browser/a3843087-0064-46ee-a4ad-8554928b456e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723249353676	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723249442287	geckodriver	INFO	Listening on 127.0.0.1:42407
+1723249442297	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "45955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileo1vrm7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723249443273	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723249443756	Marionette	INFO	Listening on port 37093
+WebDriver BiDi listening on ws://127.0.0.1:45955
+Read port: 37093
+1723249444387	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:45955/devtools/browser/ff18b62e-afa4-4100-affd-eba7a4873df4
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723249473400	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723249562675	geckodriver	INFO	Listening on 127.0.0.1:37177
+1723249563188	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "58661" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledFmTnC"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723249567631	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723249568959	Marionette	INFO	Listening on port 43363
+Read port: 43363
+WebDriver BiDi listening on ws://127.0.0.1:58661
+1723249571684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1723396801934	geckodriver	INFO	Listening on 127.0.0.1:38767
+1723396802401	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "48467" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTbOsvr"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723396805298	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723396806184	Marionette	INFO	Listening on port 38959
+Read port: 38959
+WebDriver BiDi listening on ws://127.0.0.1:48467
+1723396806590	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48467/devtools/browser/f39a3ee1-daa1-4765-b640-54c1537c70ee
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723396835286	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723400522381	geckodriver	INFO	Listening on 127.0.0.1:57275
+1723400522889	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "52431" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0cd5ns"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723400523773	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723400524290	Marionette	INFO	Listening on port 43169
+WebDriver BiDi listening on ws://127.0.0.1:52431
+Read port: 43169
+1723400524886	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52431/devtools/browser/32aab1e7-7934-464e-bd3b-3f9324a3f96e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723400553867	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723404241779	geckodriver	INFO	Listening on 127.0.0.1:33779
+1723404242287	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "55551" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9W9cPg"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723404243189	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723404243706	Marionette	INFO	Listening on port 46605
+WebDriver BiDi listening on ws://127.0.0.1:55551
+Read port: 46605
+1723404244308	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55551/devtools/browser/635cdfcf-9670-4bdc-865e-c8a705bb020d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723404275123	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+1723407842242	geckodriver	INFO	Listening on 127.0.0.1:48991
+1723407842749	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "34525" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileGPYeDc"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723407843650	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723407844123	Marionette	INFO	Listening on port 38953
+Read port: 38953
+WebDriver BiDi listening on ws://127.0.0.1:34525
+1723407844376	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:34525/devtools/browser/de8c736c-ee00-43e5-97c8-1e8e09897bfe
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723407873668	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723411562362	geckodriver	INFO	Listening on 127.0.0.1:57913
+1723411562869	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "53337" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTzCnBG"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723411563773	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723411564260	Marionette	INFO	Listening on port 43981
+Read port: 43981
+WebDriver BiDi listening on ws://127.0.0.1:53337
+1723411564524	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53337/devtools/browser/6028da71-a5a1-43b3-9aa5-a0d112870bdf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723411593844	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1723415281522	geckodriver	INFO	Listening on 127.0.0.1:59695
+1723415282030	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "60507" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePv3Asn"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1723415282987	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/addonsInfo.jsm, line 2: NS_ERROR_FILE_NOT_FOUND: 
+1723415283456	Marionette	INFO	Listening on port 42009
+WebDriver BiDi listening on ws://127.0.0.1:60507
+Read port: 42009
+1723415284077	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:60507/devtools/browser/36178fa0-c871-49a2-806f-bc5e100c650e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ais.usvisa-info.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1723415313906	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.

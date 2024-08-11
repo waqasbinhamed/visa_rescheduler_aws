@@ -21,18 +21,20 @@ from selenium.common.exceptions import NoSuchElementException
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 
 from utils import Result
 
 console = logging.StreamHandler(sys.stdout)
-file_handler = logging.FileHandler(f'logs/{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')
+# file_handler = logging.FileHandler(f'logs/{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')
 
 formatter = logging.Formatter('%(asctime)s - %(levelname)s:%(funcName)s - %(message)s')
 console.setFormatter(formatter)
-file_handler.setFormatter(formatter)
+# file_handler.setFormatter(formatter)
 logger = logging.getLogger("Visa_Logger")
 logger.addHandler(console)
-logger.addHandler(file_handler)
+# logger.addHandler(file_handler)
 logger.setLevel(logging.DEBUG)
 
 config = configparser.ConfigParser()
@@ -283,10 +285,13 @@ class VisaScheduler:
     def get_driver():
         dr = None
         if USE == Use.LOCAL.value:
-            chrome_options = webdriver.ChromeOptions()
-            # chrome_options.add_argument('--headless=new')
+            #chrome_options = webdriver.ChromeOptions()
+            #chrome_options.add_argument('--headless=new')
             # dr = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
-            dr = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options)
+            # dr = webdriver.Chrome(executable_path="/home/waqas/visa_rescheduler_aws/chromedriver", options=chrome_options)
+            options = webdriver.FirefoxOptions()
+            options.add_argument('--headless')
+            dr = webdriver.Firefox(executable_path="./geckodriver", options=options)
             
         elif USE == Use.AWS.value:
             chrome_options = webdriver.ChromeOptions()
