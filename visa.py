@@ -224,11 +224,13 @@ class VisaScheduler:
         if r.status_code == 200:
             msg = f"Rescheduled Successfully! {date} {time}" + f", ASC: {asc_date} {asc_time}" if NEED_ASC else ""
             self.send_notification(msg)
+            self.driver.quit()
             return Result.SUCCESS
         else:
             msg = f"Reschedule Failed. {date} {time}" + f", ASC: {asc_date} {asc_time}" if NEED_ASC else ""
             self.send_notification(msg)
             logger.error(msg + str(r.status_code) + r.text)
+            self.driver.quit()
             return Result.RETRY
 
     def asc_availability(self, date, time):
@@ -376,6 +378,7 @@ class VisaScheduler:
             if not dates:
                 logger.info("No dates available on FACILITY")
                 result = Result.COOLDOWN
+                self.driver.quit()
                 return result
 
             self.print_dates(dates)
@@ -384,6 +387,7 @@ class VisaScheduler:
             if not date:
                 # No dates that fulfill MY_CONDITION_DATE or early enough
                 result = Result.RETRY
+                self.driver.quit()
                 return result
 
             date_time = self.get_time(date)
@@ -391,6 +395,7 @@ class VisaScheduler:
             if not date_time:
                 # No times that fulfill MY_CONDITION_TIME
                 result = Result.RETRY
+                self.driver.quit()
                 return result
 
             logger.info(f"New date: {date} {date_time}")
@@ -400,16 +405,19 @@ class VisaScheduler:
                 if not found:
                     logger.info("No dates available on ASC")
                     result = Result.COOLDOWN
+                    self.driver.quit()
                     return result
 
                 if not asc_date[0] and not asc_date[1]:
                     # No dates that fulfill MY_CONDITION_DATE
                     result = Result.RETRY
+                    self.driver.quit()
                     return result
 
                 if not asc_date[1]:
                     # No times that fulfill MY_CONDITION_TIME
                     result = Result.RETRY
+                    self.driver.quit()
                     return result
 
                 result = self.reschedule(date, date_time, asc_date[0], asc_date[1])
@@ -421,4 +429,5 @@ class VisaScheduler:
             logger.error(e)
             result = Result.EXCEPTION
 
+        self.driver.quit()
         return result
