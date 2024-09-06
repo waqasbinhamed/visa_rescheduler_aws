@@ -180,7 +180,7 @@ class VisaScheduler:
 
     def reschedule(self, date, time, asc_date=None, asc_time=None):
         logger.info(f"Starting Reschedule ({date})")
-
+        self.send_notification(f"Starting Reschedule ({date})")
         self.driver.get(APPOINTMENT_URL)
 
         tm.sleep(STEP_TIME)
