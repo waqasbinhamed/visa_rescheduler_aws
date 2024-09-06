@@ -12,3 +12,4 @@ venv
 chromedriver
 geckodriver
 geckodriver.log
+last_action.json

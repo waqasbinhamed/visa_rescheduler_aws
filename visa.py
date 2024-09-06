@@ -85,7 +85,7 @@ class VisaScheduler:
     # def MY_CONDITION_DATE(year, month, day): return int(month) == 11 and int(day) >= 5 and int(year) == 2023
     def MY_CONDITION_DATE(self, app_date):
         app_dt = datetime.strptime(app_date, "%Y-%m-%d") 
-        return datetime.strptime(self.my_schedule_date, "%Y-%m-%d") - app_dt > timedelta(days=90) and app_dt > datetime.now() + timedelta(days=14)
+        return datetime.strptime(self.my_schedule_date, "%Y-%m-%d") - app_dt > timedelta(days=30) and app_dt > datetime.now() + timedelta(days=14)
 
     # def MY_CONDITION_TIME(hour, minute): return int(hour) >= 8 and int(hour) <= 12 and int(minute) == 0
     @staticmethod
